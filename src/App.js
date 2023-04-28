@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
+import Header from './components/Header';
+import TinderCard from './components/TinderCard';
+import SwipeButtons from './components/SwipeButtons';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		//BEM class naming convention
+		<div className='App'>
+			{/* Header */}
+			<Header />
+
+			{/* Tinder Card */}
+			<TinderCard />
+			{/* Swipe Buttons */}
+			<SwipeButtons />
+		</div>
+	);
 }
 
 export default App;
